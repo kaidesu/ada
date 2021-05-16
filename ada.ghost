@@ -1,3 +1,4 @@
+// Create a new Ada instance.
 function new() {
     ada := {
         "knowledge": [],
@@ -12,20 +13,25 @@ function new() {
             "are": "am",
             "you've": "I have",
             "you'll": "I will",
+            "you're": "I am",
             "your": "my",
             "yours": "mine",
-            "you": "me",
+            "you": "I",
             "me": "you"
         }
     }
 
+    // Send a greeting response.
     ada.greet := function() {
         return ada.respond("hello")
     }
 
+    // Respond to user input.
     ada.respond := function(text) {
         foundMatch := false
 
+        // Loop through our collect knowledge base, looking for a match against
+        // the user's input.
         for (knowledge in ada.knowledge) {
             if ((knowledge.pattern).matches(text.toLowerCase()) and foundMatch == false) {
                 foundMatch := true
@@ -41,10 +47,12 @@ function new() {
         }
     }
 
+    // Load in our knowledge base.
     ada.load := function(knowledge) {
         ada.knowledge := knowledge
     }
 
+    // Reflect on the user's input.
     ada.reflect := function(text) {
         words := text.split(" ")
 

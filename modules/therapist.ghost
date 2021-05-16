@@ -228,6 +228,69 @@ patterns := [
         ]
     },
     {
+        "pattern": "you (.*)",
+        "responses": [
+            "We should be discussing you, not me.",
+            "Why do you say that about me?",
+            "Why do you care whether I {1}?"
+        ]
+    },
+    {
+        "pattern": "why (.*)",
+        "responses": [
+            "Why don't you tell me the reason why {1}?",
+            "Why do you think {1}?"
+        ]
+    },
+    {
+        "pattern": "i want (.*)",
+        "responses": [
+            "What would it mean to you if you got {1}?",
+            "Why do you want {1}?",
+            "What would you do if you got {1}?",
+            "If you got {1}, then what would you do?"
+        ]
+    },
+    {
+        "pattern": "(.*) mother(.*)",
+        "responses": [
+            "Tell me more about your mother.",
+            "What was your relationship with your mother like?",
+            "How do you feel about your mother?",
+            "How does this relate to your feelings today?",
+            "Good family relations are important."
+        ]
+    },
+    {
+        "pattern": "(.*) father(.*)",
+        "responses": [
+            "Tell me more about your father.",
+            "How did your father make you feel?",
+            "How do you feel about your father?",
+            "Does your relationship with your father relate to your feelings today?",
+            "Do you have trouble showing affection with your family?"
+        ]
+    },
+    {
+        "pattern": "(.*) child(.*)",
+        "responses": [
+            "Did you have close friends as a child?",
+            "What is your favorite childhood memory?",
+            "Do you remember any dreams or nightmares from childhood?",
+            "Did the other children sometimes tease you?",
+            "How do you think your childhood experiences relate to your feelings today?"
+        ]
+    },
+    {
+        "pattern": "(.*)\?",
+        "responses": [
+            "Why do you ask that?",
+            "Please consider whether you can answer your own question.",
+            "Perhaps the answer lies within yourself?",
+            "Why don't you tell me?"
+        ]
+    },
+    {
         "pattern": "(.*)",
         "responses": [
             "Please tell me more.",
